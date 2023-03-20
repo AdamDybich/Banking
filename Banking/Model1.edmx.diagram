@@ -6,7 +6,13 @@
     <edmx:Diagrams>
       <Diagram DiagramId="6ab23de3e3534b188c5235d8c73f20d5" Name="Diagram1">
         <EntityTypeShape EntityType="BankingModel.Admin_Table" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="BankingModel.BankingAdmin" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BankingModel.debit" Width="1.5" PointX="0.75" PointY="3.75" />
+        <EntityTypeShape EntityType="BankingModel.Deposit" Width="1.5" PointX="2.75" PointY="3.75" />
+        <EntityTypeShape EntityType="BankingModel.employee" Width="1.5" PointX="4.75" PointY="3.75" />
+        <EntityTypeShape EntityType="BankingModel.FD" Width="1.5" PointX="2.875" PointY="0.75" />
+        <EntityTypeShape EntityType="BankingModel.Transfer" Width="1.5" PointX="4.75" PointY="0.75" />
+        <EntityTypeShape EntityType="BankingModel.userAccount" Width="1.5" PointX="0.75" PointY="7.75" />
+        <EntityTypeShape EntityType="BankingModel.userTable" Width="1.5" PointX="2.75" PointY="7.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

@@ -30,7 +30,7 @@
         {
             this.lbl_customer = new System.Windows.Forms.Label();
             this.lbl_date = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lbl_dateLabel = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -42,25 +42,25 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.box_maritalStatus = new System.Windows.Forms.GroupBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.rad_unmarried = new System.Windows.Forms.RadioButton();
+            this.rad_married = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
+            this.rad_other = new System.Windows.Forms.RadioButton();
+            this.rad_female = new System.Windows.Forms.RadioButton();
+            this.rad_male = new System.Windows.Forms.RadioButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btn_uploadPhoto = new System.Windows.Forms.Button();
             this.btn_Save = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.txt_accountNo = new System.Windows.Forms.TextBox();
+            this.txt_name = new System.Windows.Forms.TextBox();
+            this.txt_fatherName = new System.Windows.Forms.TextBox();
+            this.txt_phoneNumber = new System.Windows.Forms.TextBox();
+            this.txt_address = new System.Windows.Forms.TextBox();
+            this.txt_dist = new System.Windows.Forms.TextBox();
+            this.txt_motherName = new System.Windows.Forms.TextBox();
+            this.box_state = new System.Windows.Forms.ComboBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.txt_balance = new System.Windows.Forms.TextBox();
             this.box_maritalStatus.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -85,14 +85,14 @@
             this.lbl_date.TabIndex = 1;
             this.lbl_date.Text = "Current Date";
             // 
-            // label1
+            // lbl_dateLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(321, 86);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(66, 16);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Datelabel";
+            this.lbl_dateLabel.AutoSize = true;
+            this.lbl_dateLabel.Location = new System.Drawing.Point(321, 86);
+            this.lbl_dateLabel.Name = "lbl_dateLabel";
+            this.lbl_dateLabel.Size = new System.Drawing.Size(66, 16);
+            this.lbl_dateLabel.TabIndex = 2;
+            this.lbl_dateLabel.Text = "Datelabel";
             // 
             // label2
             // 
@@ -142,7 +142,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(51, 355);
+            this.label7.Location = new System.Drawing.Point(51, 381);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(33, 16);
             this.label7.TabIndex = 8;
@@ -151,7 +151,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(54, 393);
+            this.label8.Location = new System.Drawing.Point(51, 420);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(38, 16);
             this.label8.TabIndex = 9;
@@ -186,8 +186,8 @@
             // 
             // box_maritalStatus
             // 
-            this.box_maritalStatus.Controls.Add(this.radioButton2);
-            this.box_maritalStatus.Controls.Add(this.radioButton1);
+            this.box_maritalStatus.Controls.Add(this.rad_unmarried);
+            this.box_maritalStatus.Controls.Add(this.rad_married);
             this.box_maritalStatus.Location = new System.Drawing.Point(501, 299);
             this.box_maritalStatus.Name = "box_maritalStatus";
             this.box_maritalStatus.Size = new System.Drawing.Size(217, 72);
@@ -195,33 +195,33 @@
             this.box_maritalStatus.TabStop = false;
             this.box_maritalStatus.Text = "marital Status";
             // 
-            // radioButton1
+            // rad_unmarried
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(7, 25);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(74, 20);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Married";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rad_unmarried.AutoSize = true;
+            this.rad_unmarried.Location = new System.Drawing.Point(108, 25);
+            this.rad_unmarried.Name = "rad_unmarried";
+            this.rad_unmarried.Size = new System.Drawing.Size(91, 20);
+            this.rad_unmarried.TabIndex = 14;
+            this.rad_unmarried.TabStop = true;
+            this.rad_unmarried.Text = "UnMarried";
+            this.rad_unmarried.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // rad_married
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(108, 25);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(91, 20);
-            this.radioButton2.TabIndex = 14;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "UnMarried";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rad_married.AutoSize = true;
+            this.rad_married.Location = new System.Drawing.Point(7, 25);
+            this.rad_married.Name = "rad_married";
+            this.rad_married.Size = new System.Drawing.Size(74, 20);
+            this.rad_married.TabIndex = 0;
+            this.rad_married.TabStop = true;
+            this.rad_married.Text = "Married";
+            this.rad_married.UseVisualStyleBackColor = true;
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.radioButton5);
-            this.groupBox1.Controls.Add(this.radioButton3);
-            this.groupBox1.Controls.Add(this.radioButton4);
+            this.groupBox1.Controls.Add(this.rad_other);
+            this.groupBox1.Controls.Add(this.rad_female);
+            this.groupBox1.Controls.Add(this.rad_male);
             this.groupBox1.Location = new System.Drawing.Point(501, 207);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(287, 72);
@@ -229,39 +229,38 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Gender";
             // 
-            // radioButton3
+            // rad_other
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(108, 25);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(74, 20);
-            this.radioButton3.TabIndex = 14;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Female";
-            this.radioButton3.UseVisualStyleBackColor = true;
-            this.radioButton3.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
+            this.rad_other.AutoSize = true;
+            this.rad_other.Location = new System.Drawing.Point(207, 25);
+            this.rad_other.Name = "rad_other";
+            this.rad_other.Size = new System.Drawing.Size(58, 20);
+            this.rad_other.TabIndex = 15;
+            this.rad_other.TabStop = true;
+            this.rad_other.Text = "other";
+            this.rad_other.UseVisualStyleBackColor = true;
             // 
-            // radioButton4
+            // rad_female
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(7, 25);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(58, 20);
-            this.radioButton4.TabIndex = 0;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "Male";
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.rad_female.AutoSize = true;
+            this.rad_female.Location = new System.Drawing.Point(108, 25);
+            this.rad_female.Name = "rad_female";
+            this.rad_female.Size = new System.Drawing.Size(74, 20);
+            this.rad_female.TabIndex = 14;
+            this.rad_female.TabStop = true;
+            this.rad_female.Text = "Female";
+            this.rad_female.UseVisualStyleBackColor = true;
             // 
-            // radioButton5
+            // rad_male
             // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Location = new System.Drawing.Point(207, 25);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(58, 20);
-            this.radioButton5.TabIndex = 15;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.Text = "other";
-            this.radioButton5.UseVisualStyleBackColor = true;
+            this.rad_male.AutoSize = true;
+            this.rad_male.Location = new System.Drawing.Point(7, 25);
+            this.rad_male.Name = "rad_male";
+            this.rad_male.Size = new System.Drawing.Size(58, 20);
+            this.rad_male.TabIndex = 0;
+            this.rad_male.TabStop = true;
+            this.rad_male.Text = "Male";
+            this.rad_male.UseVisualStyleBackColor = true;
             // 
             // pictureBox1
             // 
@@ -279,6 +278,7 @@
             this.btn_uploadPhoto.TabIndex = 16;
             this.btn_uploadPhoto.Text = "Upload Photo";
             this.btn_uploadPhoto.UseVisualStyleBackColor = true;
+            this.btn_uploadPhoto.Click += new System.EventHandler(this.btn_uploadPhoto_Click);
             // 
             // btn_Save
             // 
@@ -288,93 +288,95 @@
             this.btn_Save.TabIndex = 17;
             this.btn_Save.Text = "Save";
             this.btn_Save.UseVisualStyleBackColor = true;
+            this.btn_Save.Click += new System.EventHandler(this.btn_Save_Click);
             // 
-            // textBox1
+            // txt_accountNo
             // 
-            this.textBox1.Location = new System.Drawing.Point(166, 127);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 22);
-            this.textBox1.TabIndex = 18;
+            this.txt_accountNo.Location = new System.Drawing.Point(166, 127);
+            this.txt_accountNo.Name = "txt_accountNo";
+            this.txt_accountNo.Size = new System.Drawing.Size(221, 22);
+            this.txt_accountNo.TabIndex = 18;
             // 
-            // textBox2
+            // txt_name
             // 
-            this.textBox2.Location = new System.Drawing.Point(166, 174);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 22);
-            this.textBox2.TabIndex = 19;
+            this.txt_name.Location = new System.Drawing.Point(166, 174);
+            this.txt_name.Name = "txt_name";
+            this.txt_name.Size = new System.Drawing.Size(221, 22);
+            this.txt_name.TabIndex = 19;
             // 
-            // textBox3
+            // txt_fatherName
             // 
-            this.textBox3.Location = new System.Drawing.Point(618, 432);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 22);
-            this.textBox3.TabIndex = 20;
+            this.txt_fatherName.Location = new System.Drawing.Point(618, 432);
+            this.txt_fatherName.Name = "txt_fatherName";
+            this.txt_fatherName.Size = new System.Drawing.Size(100, 22);
+            this.txt_fatherName.TabIndex = 20;
             // 
-            // textBox4
+            // txt_phoneNumber
             // 
-            this.textBox4.Location = new System.Drawing.Point(166, 271);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 22);
-            this.textBox4.TabIndex = 21;
+            this.txt_phoneNumber.Location = new System.Drawing.Point(166, 271);
+            this.txt_phoneNumber.Name = "txt_phoneNumber";
+            this.txt_phoneNumber.Size = new System.Drawing.Size(221, 22);
+            this.txt_phoneNumber.TabIndex = 21;
             // 
-            // textBox5
+            // txt_address
             // 
-            this.textBox5.Location = new System.Drawing.Point(166, 312);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 22);
-            this.textBox5.TabIndex = 22;
+            this.txt_address.Location = new System.Drawing.Point(166, 312);
+            this.txt_address.Multiline = true;
+            this.txt_address.Name = "txt_address";
+            this.txt_address.Size = new System.Drawing.Size(221, 46);
+            this.txt_address.TabIndex = 22;
             // 
-            // textBox6
+            // txt_dist
             // 
-            this.textBox6.Location = new System.Drawing.Point(166, 355);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 22);
-            this.textBox6.TabIndex = 23;
+            this.txt_dist.Location = new System.Drawing.Point(166, 375);
+            this.txt_dist.Name = "txt_dist";
+            this.txt_dist.Size = new System.Drawing.Size(221, 22);
+            this.txt_dist.TabIndex = 23;
             // 
-            // textBox7
+            // txt_motherName
             // 
-            this.textBox7.Location = new System.Drawing.Point(618, 393);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(100, 22);
-            this.textBox7.TabIndex = 24;
+            this.txt_motherName.Location = new System.Drawing.Point(618, 393);
+            this.txt_motherName.Name = "txt_motherName";
+            this.txt_motherName.Size = new System.Drawing.Size(100, 22);
+            this.txt_motherName.TabIndex = 24;
             // 
-            // comboBox1
+            // box_state
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(166, 384);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 24);
-            this.comboBox1.TabIndex = 25;
+            this.box_state.FormattingEnabled = true;
+            this.box_state.Location = new System.Drawing.Point(166, 417);
+            this.box_state.Name = "box_state";
+            this.box_state.Size = new System.Drawing.Size(221, 24);
+            this.box_state.TabIndex = 25;
             // 
             // dateTimePicker1
             // 
             this.dateTimePicker1.Location = new System.Drawing.Point(166, 231);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
+            this.dateTimePicker1.Size = new System.Drawing.Size(221, 22);
             this.dateTimePicker1.TabIndex = 26;
             // 
-            // textBox8
+            // txt_balance
             // 
-            this.textBox8.Location = new System.Drawing.Point(618, 473);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(100, 22);
-            this.textBox8.TabIndex = 27;
+            this.txt_balance.Location = new System.Drawing.Point(618, 473);
+            this.txt_balance.Name = "txt_balance";
+            this.txt_balance.Size = new System.Drawing.Size(100, 22);
+            this.txt_balance.TabIndex = 27;
             // 
             // newAccount
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 550);
-            this.Controls.Add(this.textBox8);
+            this.Controls.Add(this.txt_balance);
             this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.box_state);
+            this.Controls.Add(this.txt_motherName);
+            this.Controls.Add(this.txt_dist);
+            this.Controls.Add(this.txt_address);
+            this.Controls.Add(this.txt_phoneNumber);
+            this.Controls.Add(this.txt_fatherName);
+            this.Controls.Add(this.txt_name);
+            this.Controls.Add(this.txt_accountNo);
             this.Controls.Add(this.btn_Save);
             this.Controls.Add(this.btn_uploadPhoto);
             this.Controls.Add(this.pictureBox1);
@@ -390,7 +392,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lbl_dateLabel);
             this.Controls.Add(this.lbl_date);
             this.Controls.Add(this.lbl_customer);
             this.Name = "newAccount";
@@ -409,7 +411,7 @@
 
         private System.Windows.Forms.Label lbl_customer;
         private System.Windows.Forms.Label lbl_date;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbl_dateLabel;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
@@ -421,24 +423,24 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.GroupBox box_maritalStatus;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton rad_unmarried;
+        private System.Windows.Forms.RadioButton rad_married;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.RadioButton radioButton5;
+        private System.Windows.Forms.RadioButton rad_female;
+        private System.Windows.Forms.RadioButton rad_male;
+        private System.Windows.Forms.RadioButton rad_other;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btn_uploadPhoto;
         private System.Windows.Forms.Button btn_Save;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox txt_accountNo;
+        private System.Windows.Forms.TextBox txt_name;
+        private System.Windows.Forms.TextBox txt_fatherName;
+        private System.Windows.Forms.TextBox txt_phoneNumber;
+        private System.Windows.Forms.TextBox txt_address;
+        private System.Windows.Forms.TextBox txt_dist;
+        private System.Windows.Forms.TextBox txt_motherName;
+        private System.Windows.Forms.ComboBox box_state;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox txt_balance;
     }
 }

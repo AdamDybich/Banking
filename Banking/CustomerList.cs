@@ -15,6 +15,18 @@ namespace Banking
         public CustomerList()
         {
             InitializeComponent();
+            bindgrid();
+            
+        }
+
+        private void bindgrid()
+        {
+            dataGridView1.AutoGenerateColumns = false;
+            BankingEntities bs = new BankingEntities();
+            var item = bs.userAccount.ToList();
+            dataGridView1.DataSource = item;
+
+            //throw new NotImplementedException();
         }
     }
 }
